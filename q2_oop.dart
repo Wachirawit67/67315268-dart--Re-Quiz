@@ -32,10 +32,11 @@ class Food extends MenuItem {
 }
 
 void main() {
-  List<MenuItem> order = [
-    Drink('ลาเต้', 50.0, 10),
-    Food('ข้าวผัด', 50.0, 10.0),
-    Drink('อเมริกาโน่', 50.0, 10),
-  ];
-  Drink.show();
+  Drink drink = Drink('ลาเต้', 65.0, 10);
+  Food food = Food('ข้าวผัด', 90.0, 10.0);
+  Drink drink1 = Drink('อเมริกาโน่', 200.0, 10);
+
+  drink.show();
+  food.show();
+  drink1.show();
 }
