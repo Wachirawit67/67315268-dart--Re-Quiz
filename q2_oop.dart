@@ -27,7 +27,6 @@ abstract class MenuItem {
   double price();
 
   void show() {
-    // แก้ไข: เอาคำว่า "ชื่อ " ออก ให้ตรงกับรูป
     print('$name - ${price()} บาท');
   }
 }

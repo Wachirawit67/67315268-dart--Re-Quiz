@@ -30,7 +30,7 @@ void main() async {
   } finally {
     print('จบรายการ');
   }
-
+  print('---');
   try {
     var order = await fetchOrder(0);
     print('ได้ข้อมูลออร์เดอร์: $order');
@@ -39,7 +39,7 @@ void main() async {
   } finally {
     print('จบรายการ');
   }
-
+  print('---');
   await for (var status in trackOrder()) {
     print('สถานะ: $status');
   }

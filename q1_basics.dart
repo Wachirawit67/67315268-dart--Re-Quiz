@@ -13,24 +13,24 @@ void main() {
 
   Map<String, int> menu = {
     'ลาเต้': 55,
-    'สปาเก็ตตี้': 49,
+    'สปาเก็ตตี้': 47,
     'น้ำองุ่น': 39,
     'ข้าวผัด': 60,
   };
   print('จำนวนเมนูทั้งหมด : ${menu.length} รายการ');
-  print('ราคาลาเต้ : ${menu["ลาเต้"]} บาท');
+  print('ราคาลาเต้: ${menu["ลาเต้"]} บาท');
 
   print('---');
-  print('เมนูราคาตั้งแต่ 50 บาทขึ้นไป');
+  print('เมนูราคาตั้งแต่ 50 บาทขึ้นไป:');
   for (var entry in menu.entries) {
     if (entry.value >= 50) {
-      print('${entry.value} : ${entry.key}');
+      print('${entry.key} : ${entry.value} บาท');
     }
   }
   print('---');
   print('ยอดสุทธิ (ไม่มีส่วนลด): ${calcTotal(price: 55, qty: 2)} บาท');
   print(
-    'ยอดสุทธิ (ไม่มีส่วนลด): ${calcTotal(price: 55, qty: 2, discount: 10)} บาท',
+    'ยอดสุทธิ (ส่วนลด 10 บาท): ${calcTotal(price: 55, qty: 2, discount: 10)} บาท',
   );
   print('---');
 
@@ -38,5 +38,5 @@ void main() {
   print('ความยาวคูปอง: ${coupon?.length ?? 0}');
 
   coupon ??= 'NO-COUPON';
-  print('คูปองหลังกำหนดการค่า: $coupon');
+  print('คูปองหลังกำหนดค่า: $coupon');
 }
