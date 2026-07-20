@@ -9,7 +9,7 @@ void printOrderStatus(OrderStatus status) {
       print('สถานะ: ชำระเงินแล้ว');
       break;
     case OrderStatus.cancelled:
-      print('สถานะ: ยกเลิกคำสั่งซื้อ');
+      print('สถานะ: ยกเลิกการสั่งซื้อ');
       break;
   }
 }
